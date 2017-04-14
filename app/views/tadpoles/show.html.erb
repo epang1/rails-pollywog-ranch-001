@@ -13,6 +13,10 @@
   <a href="/tadpoles/<%= @tadpole.id %>/destroy">Delete</a>
 </div>
 
+<form action="/tadpoles/<%= @tadpole.id %>/metamorphosize" method="POST">
+<input type='submit' value='Become a frog'>
+</form>
+
 <div class="card">
   <img src="http://<%= @tadpole.color %>-tadpole.jpg.to/" alt="Tadpole Picture" width="300">
 </div>
